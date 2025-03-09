@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8695174874252331218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319041fa7f9774c818873528f2a1c55d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Description: Add Strength
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,14 +12,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 640b52b005f736744b3aabdfb8f24abb, type: 3}
   m_Name: StrengthEquipEffect
   m_EditorClassIdentifier: 
-  ItemName: StrengthPotion
-  ItemSprite: {fileID: 21300000, guid: 0e048954ff684ea4bb775a9845653428, type: 3}
-  Description: 
-  WorldObjectPrefab: {fileID: -927199367670048503, guid: a479320996c6fb347aab48094ead83ac,
-    type: 3}
-  Slot: 4
-  MinimumStrength: 1
+  ItemName: Booter Hat
+  ItemSprite: {fileID: 21300000, guid: fee1d85819da082459912a02dad9911b, type: 3}
+  Description: Boosts your abilities
+  WorldObjectPrefab: {fileID: 0}
+  Slot: 0
+  MinimumStrength: 0
   MinimumAgility: 0
   MinimumDefense: 0
   EquippedEffects:
-  - {fileID: -8695174874252331218}
+  - {fileID: 2264076226501761916}
+--- !u!114 &2264076226501761916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674612dbe4e22e441942361b0bdb7803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  Modifier:
+    ModifierMode: 1
+    Stats:
+      health: 25
+      strength: 25
+      defense: 15
+      agility: 15
+      elementalProtection: 00000000000000000000000000000000
+      elementalBoosts: 00000000000000000000000000000000
+--- !u!114 &2605821785155600894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674612dbe4e22e441942361b0bdb7803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  Modifier:
+    ModifierMode: 1
+    Stats:
+      health: 25
+      strength: 25
+      defense: 15
+      agility: 15
+      elementalProtection: 00000000000000000000000000000000
+      elementalBoosts: 00000000000000000000000000000000

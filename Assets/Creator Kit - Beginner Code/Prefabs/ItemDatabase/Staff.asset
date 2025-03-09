@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7006217403609719376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b826785bd79bdb43a127d008f406406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: Burns Enemies
+  PercentageChance: 100
+  Damage: 10
+  Time: 15
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,13 +34,9 @@ MonoBehaviour:
   WorldObjectPrefab: {fileID: 5482170467533448303, guid: 56ca1676619f33d48b134bb4a8b721c8,
     type: 3}
   Slot: 666
-  MinimumStats:
-    health: 0
-    strength: 0
-    defense: 0
-    agility: 0
-    elementalProtection: 00000000000000000000000000000000
-    elementalBoosts: 00000000000000000000000000000000
+  MinimumStrength: 0
+  MinimumAgility: 0
+  MinimumDefense: 0
   EquippedEffects: []
   HitSounds: []
   SwingSounds: []
@@ -33,4 +45,5 @@ MonoBehaviour:
     MinimumDamage: 15
     MaximumDamage: 20
     MaxRange: 2
-  AttackEffects: []
+  AttackEffects:
+  - {fileID: -7006217403609719376}
